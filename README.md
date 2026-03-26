@@ -1,3 +1,7 @@
+![Azure](https://img.shields.io/badge/Azure-DataFactory-blue)
+![Databricks](https://img.shields.io/badge/Databricks-Spark-orange)
+![Python](https://img.shields.io/badge/Python-3.10-yellow)
+
 # 🎬 Movie Data Engineering Pipeline
 
 ## 🚀 Project Overview
