@@ -11,6 +11,17 @@ End-to-end data engineering pipeline built using Azure Data Factory and Databric
 This project processes movie datasets from raw ingestion to business-ready analytics.
 
 ---
+## 🏗️ Arquitectura del Proyecto
+
+El pipeline sigue el siguiente flujo:
+
+1. **Ingesta (Bronze):** Datos crudos almacenados en Data Lake
+2. **Transformación (Silver):** Limpieza, joins y estructuración
+3. **Consumo (Gold):** Datos agregados listos para análisis
+
+📌 Diagrama de la arquitectura del proyecto:
+
+![Arquitectura](images/bronze_schema.png)
 
 ## 🏗️ Architecture
 
