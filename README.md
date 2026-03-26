@@ -21,7 +21,7 @@ El pipeline sigue el siguiente flujo:
 
 📌 Diagrama de la arquitectura del proyecto:
 
-![Arquitectura](imagenes/bronze_schema.png)
+![Arquitectura](movie-history/07_imagenes/01.bronze_schema.png)
 
 ## 🏗️ Architecture
 
