@@ -2,35 +2,82 @@
 ![Databricks](https://img.shields.io/badge/Databricks-Spark-orange)
 ![Python](https://img.shields.io/badge/Python-3.10-yellow)
 
-# 🎬 Movie Data Engineering Pipeline
+Movie Data Engineering Pipeline
+![Intro](imagenes/1.png)
 
-## 🚀 Project Overview
-
-End-to-end data engineering pipeline built using Azure Data Factory and Databricks, following the Medallion Architecture (Bronze, Silver, Gold).
-
-This project processes movie datasets from raw ingestion to business-ready analytics.
-
----
-## 🏗️ Arquitectura del Proyecto
+## Arquitectura del Proyecto
 
 El pipeline sigue el siguiente flujo:
-
-1. **Ingesta (Bronze):** Datos crudos almacenados en Data Lake
-2. **Transformación (Silver):** Limpieza, joins y estructuración
-3. **Consumo (Gold):** Datos agregados listos para análisis
-
-📌 Diagrama de la arquitectura del proyecto:
-
-![Arquitectura](movie-history/07_imagenes/01.bronze_schema.png)
-
-## 🏗️ Architecture
-
-The pipeline follows a layered architecture:
 
 * **Bronze**: Raw data ingestion from Azure Data Lake (CSV, JSON)
 * **Silver**: Data cleaning, transformation, and enrichment
 * **Gold**: Business-level aggregations and analytics-ready tables
 * **Analysis**: SQL-based insights and reporting
+
+📌 Diagrama de la arquitectura del proyecto:
+
+![Arquitectura](imagenes/2.png)
+
+The pipeline follows a layered architecture:
+
+
+
+---
+## 📥 Ingesta de Datos (Bronze Layer)
+
+Los datos son ingeridos desde archivos hacia el Data Lake utilizando notebooks en Databricks.
+
+* Uso de parámetros (`widgets`)
+* Lectura de archivos JSON/CSV
+* Escritura en formato Delta
+
+📌 Notebook de ingestión en Databricks:
+
+![Ingesta](imagenes/3.png)
+
+---
+## ⚙️ Transformación de Datos (Silver Layer)
+
+En esta capa se realiza:
+
+* Limpieza de datos
+* Normalización de columnas
+* Joins entre datasets (movies, languages, genres, etc.)
+
+📌 Proceso de transformación y joins:
+
+![Transformación](imagenes/4.png)
+
+---
+## 🥇 Capa Gold (Data Warehouse)
+
+Se generan tablas agregadas optimizadas para análisis:
+
+* Métricas de revenue
+* Presupuestos por productora
+* Promedios y conteos
+
+📌 Consulta SQL sobre datos en capa Gold:
+
+![Gold](imagenes/5.png)
+
+---
+
+## 📊 Análisis de Datos
+
+Ejemplo de análisis: comparación entre presupuesto y revenue por productora.
+
+Este tipo de visualización permite identificar:
+
+* Productoras más rentables
+* Relación inversión vs retorno
+
+📌 Visualización de resultados:
+
+![Análisis](imagenes/7.png)
+![Análisis](imagenes/8.png)
+![Análisis](imagenes/9.png)
+![Análisis](imagenes/10.png)
 
 ---
 
@@ -77,6 +124,8 @@ movie-history/
 ```
 
 ---
+![Análisis](imagenes/11.png)
+
 
 ## 🔐 Security Note
 
