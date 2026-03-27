@@ -3,7 +3,7 @@
 ![Python](https://img.shields.io/badge/Python-3.10-yellow)
 
 Movie Data Engineering Pipeline
-![Intro](imagenes/1.png)
+![Intro](movie-history/imagenes/1.png)
 
 ## Arquitectura del Proyecto
 
@@ -16,7 +16,7 @@ El pipeline sigue el siguiente flujo:
 
 📌 Diagrama de la arquitectura del proyecto:
 
-![Arquitectura](imagenes/2.png)
+![Arquitectura](movie-history/imagenes/2.png)
 
 The pipeline follows a layered architecture:
 
@@ -33,7 +33,7 @@ Los datos son ingeridos desde archivos hacia el Data Lake utilizando notebooks e
 
 📌 Notebook de ingestión en Databricks:
 
-![Ingesta](imagenes/3.png)
+![Ingesta](movie-history/imagenes/3.png)
 
 ---
 ## ⚙️ Transformación de Datos (Silver Layer)
@@ -46,7 +46,7 @@ En esta capa se realiza:
 
 📌 Proceso de transformación y joins:
 
-![Transformación](imagenes/4.png)
+![Transformación](movie-history/imagenes/4.png)
 
 ---
 ## 🥇 Capa Gold (Data Warehouse)
@@ -59,7 +59,7 @@ Se generan tablas agregadas optimizadas para análisis:
 
 📌 Consulta SQL sobre datos en capa Gold:
 
-![Gold](imagenes/5.png)
+![Gold](movie-history/imagenes/5.png)
 
 ---
 
@@ -74,10 +74,10 @@ Este tipo de visualización permite identificar:
 
 📌 Visualización de resultados:
 
-![Análisis](imagenes/7.png)
-![Análisis](imagenes/8.png)
-![Análisis](imagenes/9.png)
-![Análisis](imagenes/10.png)
+![Análisis](movie-history/imagenes/7.png)
+![Análisis](movie-history/imagenes/8.png)
+![Análisis](movie-history/imagenes/9.png)
+![Análisis](movie-history/imagenes/10.png)
 
 ---
 
@@ -124,7 +124,7 @@ movie-history/
 ```
 
 ---
-![Análisis](imagenes/11.png)
+![Análisis](movie-history/imagenes/11.png)
 
 
 ## 🔐 Security Note
